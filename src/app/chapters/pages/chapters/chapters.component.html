@@ -1,0 +1,47 @@
+<div class="table-wrapper">
+  <h1>Chapters Catalogue</h1>
+
+
+  <app-chapter-form (editCanceled)="onCancelEdit()" (chapterAdded)="onChapterAdded($event)"
+                        (chapterUpdated)="onChapterUpdated($event)" [editMode]="inEditMode" [chapter]="chapterData"></app-chapter-form>
+
+  <!--Data Table-->
+  <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
+    <ng-container matColumnDef="id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Id</th>
+      <td *matCellDef="let element" mat-cell>{{ element.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="bookId">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Book Id</th>
+      <td *matCellDef="let element" mat-cell>{{ element.bookId }}</td>
+    </ng-container>
+    <ng-container matColumnDef="order">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header> Order</th>
+      <td *matCellDef="let element" mat-cell>{{ element.order }}</td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+      <th *matHeaderCellDef mat-header-cell> Title</th>
+      <td *matCellDef="let element" mat-cell>{{ element.title }}</td>
+    </ng-container>
+    <ng-container matColumnDef="content">
+      <th *matHeaderCellDef mat-header-cell> Content</th>
+      <td *matCellDef="let element" mat-cell>{{ element.content }}</td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <th *matHeaderCellDef mat-header-cell> Actions</th>
+      <td *matCellDef="let element" mat-cell>
+        <a (click)="onEditItem(element)" href="javascript:void(0)">
+          <mat-icon>edit</mat-icon>
+        </a>
+        <a (click)="onDeleteItem(element)" href="javascript:void(0)">
+          <mat-icon>delete</mat-icon>
+        </a>
+      </td>
+    </ng-container>
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns" [ngClass]="{'editable-row': chapterData.id === row.id}"
+        mat-row></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+
+</div>

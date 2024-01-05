@@ -1,0 +1,480 @@
+{
+  "chapters": [
+    {
+      "id": 2,
+      "bookId": 1,
+      "order": 2,
+      "title": "War is Declared",
+      "content": "Something really cool happens here B).",
+      "comments": [
+        {
+          "Usuario": "Loleao",
+          "Contenido": "Wasa",
+          "Fecha": "2023-09-15T05:00:00.000Z",
+          "id": 3,
+          "chapter_id": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "bookId": 1,
+      "order": 3,
+      "title": "Black Dawn",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 4,
+      "bookId": 1,
+      "order": 4,
+      "title": "Friend in Need",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 5,
+      "bookId": 2,
+      "order": 1,
+      "title": "Shinmen Takezo",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 6,
+      "bookId": 2,
+      "order": 2,
+      "title": "Akemi",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 7,
+      "bookId": 2,
+      "order": 3,
+      "title": "Oko",
+      "content": "Something really cool happens here B)."
+    },
+    {
+      "id": 8,
+      "bookId": 4,
+      "order": 1,
+      "title": "Prologue",
+      "content": "Long ago, someone once said,"
+    },
+    {
+      "bookId": "1",
+      "order": "6",
+      "title": "this",
+      "content": "that",
+      "id": 9
+    }
+  ],
+  "fanfics": [
+    {
+      "id": 1,
+      "title": "Somebody to love",
+      "author": "SyadFanfic",
+      "summary": "Enamorse de un hombre durante los años 50 nunca fue algo que Taehyung o Jungkook hubieran imaginado. Especialmente cuando ambos estaban casados con sus hermosas esposas.\n\nO la historia de dos amantes que nunca fueron el uno para el otro, pero el destino encontró sus caminos de todos modos.",
+      "publication_date": "2023-07-20",
+      "language_id": 1,
+      "status_id": 1,
+      "saga_id": 1,
+      "views": 1302487,
+      "favorites": 82746,
+      "thumbnail": "https://img.wattpad.com/cover/261408854-256-k737009.jpg",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "romance",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "yaoi",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "bookId": 1,
+          "order": 1,
+          "title": "Who I Am - How I Come to Be",
+          "content": "This is the cool things that happen here"
+        },
+        {
+          "id": 2,
+          "bookId": 1,
+          "order": 2,
+          "title": "War is Declared",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 3,
+          "bookId": 1,
+          "order": 3,
+          "title": "Black Dawn",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 4,
+          "bookId": 1,
+          "order": 4,
+          "title": "Friend in Need",
+          "content": "Something really cool happens here B)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Roommates",
+      "author": "Scarlet Grant",
+      "summary": "Jungkook forma parte del equipo universitario de boxeo. De manera recurrente, llega de noche a su casa con heridas o contusiones. Taehyung, su compañero de piso, siempre está allí para curarlo y mimarlo.",
+      "publication_date": "2022-12-25",
+      "language_id": 1,
+      "status_id": 2,
+      "saga_id": 1,
+      "views": 77234,
+      "favorites": 7346,
+      "thumbnail": "https://img.wattpad.com/cover/323497674-256-k192373.jpg",
+      "categories": [
+        {
+          "id": 3,
+          "name": "comedy",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "romance",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "yaoi",
+          "selected": false
+        },
+        {
+          "id": 6,
+          "name": "enemy to lovers",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "La teoría de Kim",
+      "author": "Azeneth2523",
+      "summary": "La noche en la que Kim Taehyung se acercó a ese laboratorio coincidió con el día en el que Jeon Jungkook desapareció en las profundidades del lago que lo rodeaba; pero la fecha estaba mal, no cuadraba, había una diferencia de más de treinta años entre ambos sucesos. ",
+      "publication_date": "2023-05-01",
+      "language_id": 2,
+      "status_id": 1,
+      "saga_id": 2,
+      "views": 19177234,
+      "favorites": 1173346,
+      "thumbnail": "https://www.planetadelibros.com.pe/usuaris/libros/fotos/385/m_libros/portada_la-teoria-de-kim_jay-sandoval_202308172238.png",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        },
+        {
+          "id": 4,
+          "name": "thriller",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "character x reader",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Innocent",
+      "author": "ThaliaDeBarnes",
+      "summary": "Porque en un mundo en donde los omegas eran cazados y asesinados no había espacio para su amor.",
+      "publication_date": "2023-03-08",
+      "language_id": 2,
+      "status_id": 1,
+      "saga_id": 1,
+      "views": 1877234,
+      "favorites": 277346,
+      "thumbnail": "https://img.wattpad.com/cover/116522012-256-k56926.jpg",
+      "categories": [
+        {
+          "id": 2,
+          "name": "drama",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
+    },
+    {
+      "title": "Pobre Kim",
+      "author": "DisgustInGucci",
+      "summary": "Taehyung debe soportar  las burlas de parte de la persona que hace que su corazón se acelere.",
+      "publication_date": "2023-08-10",
+      "language_id": "2",
+      "status_id": "1",
+      "saga_id": "1",
+      "views": 3752234,
+      "favorites": 460346,
+      "id": 5,
+      "thumbnail": "https://img.wattpad.com/cover/103324876-416-k860974.jpg",
+      "categories": [
+        {
+          "id": 3,
+          "name": "comedy",
+          "selected": false
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "bl",
+          "selected": false
+        },
+        {
+          "id": 5,
+          "name": "character x reader",
+          "selected": false
+        }
+      ],
+      "chapters": [
+        {
+          "id": 5,
+          "bookId": 2,
+          "order": 1,
+          "title": "Shinmen Takezo",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "order": 2,
+          "title": "Akemi",
+          "content": "Something really cool happens here B)."
+        },
+        {
+          "id": 7,
+          "bookId": 2,
+          "order": 3,
+          "title": "Oko",
+          "content": "Something really cool happens here B)."
+        }
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "userName": "pablito616",
+      "password": "insano63",
+      "email": "pablito@gmail.com",
+      "id": 1
+    },
+    {
+      "userName": "Escritor desconocido 301",
+      "password": "123543634",
+      "email": "anonimo63@gmail.com",
+      "id": 2
+    },
+    {
+      "userName": "sinfonia31",
+      "password": "sinfony123124",
+      "email": "sinfoniasoledad@gmail.com",
+      "id": 3
+    }
+  ],
+  "profile": [
+    {
+      "userName": "sinfonia31",
+      "firstName": "Pablo",
+      "lastName": "Escobar",
+      "email": "sinfonia@mail.com",
+      "imageUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/menhera-chan-3-1/sticker_28.png?0fce8e4c13ea0763f40b8d577fd192f3",
+      "id": 1
+    }
+  ],
+  "comentarios": [
+    {
+      "Usuario": "Carlos123",
+      "Contenido": "Excelente capitulo!",
+      "Fecha": "2023-09-30T05:00:00.000Z",
+      "id": 1,
+      "chapter_id": 1
+    },
+    {
+      "Usuario": "JorgeGC",
+      "Contenido": "Maravilloso",
+      "Fecha": "2023-09-29T05:00:00.000Z",
+      "id": 2,
+      "chapter_id": 1
+    },
+    {
+      "Usuario": "Loleao",
+      "Contenido": "Wasa",
+      "Fecha": "2023-09-15T05:00:00.000Z",
+      "id": 3,
+      "chapter_id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "action",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "drama",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "comedy",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "name": "thriller",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "romance",
+      "selected": false
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "bl",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "name": "furry",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "yuri",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "name": "yaoi",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "name": "character x reader",
+      "selected": false
+    },
+    {
+      "id": 6,
+      "name": "enemy to lovers",
+      "selected": false
+    }
+  ]
+}

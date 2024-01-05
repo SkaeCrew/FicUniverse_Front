@@ -1,0 +1,96 @@
+.carousel-container{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 800px;
+  border-radius: 15px;
+  //box-shadow: 0 8px 16px #dce1e1;
+}
+.carousel-container img{
+  display: none;
+  border-radius: 15px;
+
+
+}
+.carousel-container img.image-active{
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.carousel-dot-container{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.dot{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6s ease;
+  opacity: 0.5;
+}
+
+.active,
+.dot:hover{
+  opacity: 1;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0.4;
+  }
+  to{
+    opacity: 1;
+  }
+
+}
+
+.btn-carouser{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+  padding: 0;
+  color:#fff;
+  text-align: center;
+  background: 0 0;
+  background-color: rgba(0, 0, 0, 0.52);
+  border: 0;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.btn-carouser:hover{
+  opacity: 0.9;
+}
+
+.btn-carouser:active{
+  opacity: 0.5;
+}
+
+.bt-prev-left{
+  left:0;
+}
+
+.bt-prev-right{
+  right:0;
+}

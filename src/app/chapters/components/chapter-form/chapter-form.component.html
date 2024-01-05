@@ -1,0 +1,24 @@
+<h2>{{editMode ? 'Edit Chapter' : 'Add Chapter'}}</h2>
+<div class="chapter-form-section">
+  <form (submit)="onSubmit()" #chapterForm='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Book Id" name="bookId" required [(ngModel)]="chapter.bookId">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Order" name="order" required [(ngModel)]="chapter.chapterOrder">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Title" name="title" required [(ngModel)]="chapter.title">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Content" name="content" required [(ngModel)]="chapter.content">
+    </mat-form-field>
+    <ng-container *ngIf="editMode ; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+.toolbar{
+  background-color: white;
+  display: flex;
+  border-bottom: 2px solid #eee;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar{
+  min-width: 300px;
+  width: 400px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.avatar{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background-color: #fff; /* Puedes ajustar el color de fondo según tus necesidades */
+  border-radius: 50%; /* Para hacer el elemento redondeado */
+}

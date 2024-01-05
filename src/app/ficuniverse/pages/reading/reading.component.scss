@@ -1,0 +1,49 @@
+.reading-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.mat-mdc-card-header{ //card header
+  justify-content: center!important;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.left-column {
+    width: 40%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.right-column {
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.reading-card {
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 50px;
+  text-align: center;
+  //max-height: 200px;
+  flex-wrap: wrap;
+
+}
+.reading-card-title{
+  margin: 0 0 20px;
+}
+.reading-card-text{
+  text-align: left;
+
+}

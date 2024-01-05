@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "Menhera",
+      "email": "menhera@mail.com",
+      "urlPhoto": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/menhera-chan-3-1/sticker_28.png?0fce8e4c13ea0763f40b8d577fd192f3"
+    },
+    {
+      "id": 2,
+      "name": "Bruno Díaz",
+      "email": "brunodiaz@mail.com",
+      "urlPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-iSO5kd5Qk7acXeacucLuhcCTjXiu3SU1fM57yGfKNovY-fhSy4A7NweQmsBVx6oLcU&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Takehiko Inoue",
+      "email": "tak@mail.com",
+      "urlPhoto": "https://i0.wp.com/www.coyotemag.fr/wp-content/uploads/2018/04/TAKEHIKO-INOUE-02.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bokuto Uno",
+      "email": "bokuto@mail.com",
+      "urlPhoto": "https://cdn.shopify.com/s/files/1/1061/1924/products/Happy_Emoji_Icon_5c9b7b25-b215-4457-922d-fef519a08b06_grande.png?v=1571606090"
+    }
+  ]
+}

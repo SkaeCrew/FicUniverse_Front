@@ -1,0 +1,49 @@
+<div class="home-component">
+
+  <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+
+  <div *ngIf="isLogged()">
+    <div class="section-title">
+      <h2>Keep reading</h2>
+    </div>
+    <owl-carousel-o [options]="customOptions" >
+      <ng-template carouselSlide *ngFor="let fic of fanfics" >
+        <app-home-fanfic [id]="fic.id" [imgUrl]="fic.thumbnail" [title]="fic.title" style="display: flex; justify-content: center;"></app-home-fanfic>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+  <div class="section-title" >
+  <h2>Recent Uploads</h2>
+  </div>
+  <owl-carousel-o [options]="customOptions" >
+    <ng-template carouselSlide *ngFor="let fic of fanfics" >
+        <app-home-fanfic [id]="fic.id" [imgUrl]="fic.thumbnail" [title]="fic.title" style="display: flex; justify-content: center"></app-home-fanfic>
+    </ng-template>
+  </owl-carousel-o>
+
+
+
+  <div class="section-title">
+    <h2>Trending</h2>
+  </div>
+  <owl-carousel-o [options]="customOptions" >
+    <ng-template carouselSlide *ngFor="let fic of fanfics" >
+      <app-home-fanfic [id]="fic.id" [imgUrl]="fic.thumbnail" [title]="fic.title" style="display: flex; justify-content: center"></app-home-fanfic>
+    </ng-template>
+  </owl-carousel-o>
+
+  <div class="section-title">
+    <h2>New Releases</h2>
+    </div>
+  <owl-carousel-o [options]="customOptions" >
+    <ng-template carouselSlide *ngFor="let fic of fanfics" >
+      <app-home-fanfic [id]="fic.id" [imgUrl]="fic.thumbnail" [title]="fic.title" style="display: flex; justify-content: center"></app-home-fanfic>
+    </ng-template>
+  </owl-carousel-o>
+
+  <app-footer-content></app-footer-content>
+</div>
+
+
+

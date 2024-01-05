@@ -1,0 +1,47 @@
+<div class="reading-page">
+  <div class="left-column">
+    <div class="reading-back-button">
+      <button  mat-button ><mat-icon>keyboard_arrow_left</mat-icon> Table of contents </button>
+    </div>
+    <div class="chapter-selector">
+      <span>
+        Chapter:<mat-form-field>
+        <mat-select [(ngModel)]="selectedChapterTitle" (ngModelChange)="onChapterChange()">
+          <mat-option *ngFor="let chapter of fanfic.chapters" [value]="chapter.title">{{ chapter.title }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      </span>
+    </div>
+    <div class="example-button-row">
+      <span>
+        Add to your likes<button mat-icon-button matTooltip="Basic" aria-label="Icon-button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      </span>
+    </div>
+    <div class="texge">
+      <p>Genres</p>
+      <p>Plot</p>
+    </div>
+    <p style="white-space: pre-line">multi-line text</p>
+    <mat-card class="example-card">
+      <mat-card-content>
+        <p>{{ fanfic.summary }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="right-column">
+    <mat-card class="reading-card" *ngIf="selectedChapterTitle && selectedChapterContent">
+      <mat-card-header>
+        <mat-card-title ><div class="reading-card-title">
+          {{ selectedChapterTitle }}
+        </div>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="reading-card-text" >{{ selectedChapterContent }}</div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>

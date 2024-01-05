@@ -1,0 +1,29 @@
+<div mat-dialog-title>
+  <h1>Comentario</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Contenido</mat-label>
+          <input matInput placeholder="Ex. Increible" formControlName="Contenido">
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Fecha de publicación</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="Fecha">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+  </div>
+  <div mat-dialog-actions form>
+    <button mat-raised-button>Cancelar </button>
+    <button mat-raised-button color ="primary" type="submit">Publicar</button>
+  </div>
+</form>

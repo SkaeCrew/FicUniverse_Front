@@ -1,0 +1,32 @@
+<!-- Edit/Add Form -->
+<h2>{{ editMode ? 'Edit Fanfic' : 'Add Fanfic' }}</h2>
+
+<div class="form-section">
+  <form (submit)="onSubmit()" #fanficForm='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Title" name="title"  [(ngModel)]="fanfic.title">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Author" name="author"  [(ngModel)]="fanfic.author">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Sumary" name="sumary"  [(ngModel)]="fanfic.summary">
+    </mat-form-field>
+    <mat-form-field id="age-form-field">
+      <input matInput placeholder="Publicacion_date" name="publication_date"  [(ngModel)]="fanfic.publicationDate">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Status" name="status_id"  [(ngModel)]="fanfic.status_id">
+    </mat-form-field>
+
+
+    <ng-container *ngIf="editMode; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+  </form>
+</div>

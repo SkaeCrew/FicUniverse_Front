@@ -1,0 +1,29 @@
+<div mat-dialog-title>
+  <h1>Registrate</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Usuario</mat-label>
+        <input matInput type ="text" placeholder="Ex. Carlos123" formControlName="Usuario">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>correo</mat-label>
+        <input matInput type ="text" placeholder="Ex. 123@gmail.com" formControlName="correo">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>contrasenia</mat-label>
+        <input matInput placeholder="Ex. 123456890" formControlName="contrasenia">
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-action
+       form>
+    <button mat-raised-button>Cancelar </button>
+    <button mat-raised-button color ="primary" type="submit">Registrar</button>
+  </div>
+</form>

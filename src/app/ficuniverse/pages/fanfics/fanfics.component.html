@@ -1,0 +1,70 @@
+<div class="table-wrapper">
+    <h1>Fanfics Catalogue</h1>
+  
+    <app-fanfic-form (editCanceled)="onCancelEdit()" (onFanficAdded)="onFanficAdded($event)"
+                        (onFanficUpdated)="onFanficUpdated($event)" [editMode]="isEditMode" [fanfic]="fanficData"/>
+
+  
+    <!-- Data Table -->
+    <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
+  
+      <ng-container matColumnDef="id">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header> #Id</th>
+        <td *matCellDef="let element" mat-cell>{{ element.id }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header> Title</th>
+        <td *matCellDef="let element" mat-cell>{{ element.title }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="author">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header> Author</th>
+        <td *matCellDef="let element" mat-cell>{{ element.author }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="summary">
+        <th *matHeaderCellDef mat-header-cell> Summary</th>
+        <td *matCellDef="let element" mat-cell>{{ element.summary }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="publication_date">
+        <th *matHeaderCellDef mat-header-cell> Publication Date</th>
+        <td *matCellDef="let element" mat-cell>{{ element.publication_date }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="language_id">
+        <th *matHeaderCellDef mat-header-cell> Lenguage</th>
+        <td *matCellDef="let element" mat-cell>{{ element.language_id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="status_id">
+        <th *matHeaderCellDef mat-header-cell> Status</th>
+        <td *matCellDef="let element" mat-cell>{{ element.status_id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="saga_id">
+        <th *matHeaderCellDef mat-header-cell> Saga</th>
+        <td *matCellDef="let element" mat-cell>{{ element.saga_id }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="actions">
+        <th *matHeaderCellDef mat-header-cell> Actions</th>
+        <td *matCellDef="let element" mat-cell>
+          <a (click)="onEditItem(element)" href="javascript:void(0)">
+            <mat-icon>edit</mat-icon>
+          </a>
+          <a (click)="onDeleteItem(element)" href="javascript:void(0)">
+            <mat-icon>delete</mat-icon>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+      <tr *matRowDef="let row; columns: displayedColumns" [ngClass]="{'editable-row': fanficData.id === row.id}"
+        mat-row></tr>
+    </table>
+
+    <!-- Paginator Child Component -->
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+  </div>

@@ -1,0 +1,48 @@
+<div class="details-fan">
+<div class="left-column">
+  <div class="example-button-row">
+    <span>
+        Add to your likes
+        <button mat-icon-button matTooltip="Add to favorites" aria-label="Add to favorites" (click)="addToFavorites()">
+          <mat-icon>favorite</mat-icon>
+        </button>
+    </span>
+  </div>
+
+  <div class="texge">
+    <p>Genres</p>
+    <ul>
+      <li *ngFor="let category of fanfic.categories">{{ category.name }}</li>
+    </ul>
+    <p>Description</p>
+  </div>
+
+  <mat-card class="example-card">
+
+    <mat-card-content>
+      <p>{{ fanfic.summary }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+<div class="right-column">
+  <app-fic-details-card [fanfic] = fanfic></app-fic-details-card>
+  <app-fic-details-chapters [fanfic]="fanfic"></app-fic-details-chapters>
+
+  <!--mat-card *ngIf="fanfic.chapters && fanfic.chapters.length > 0" class="examp-ca">
+    <mat-card-content>
+      <h4 class="chapter-list-title">Chapter:</h4>
+      <ul>
+        <li *ngFor="let chapter of fanfic.chapters" class="chapter-item">
+          <a [routerLink]="['/reading', fanficId,chapter.id]">{{ chapter.title }}</a>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card-->
+
+</div>
+
+
+</div>

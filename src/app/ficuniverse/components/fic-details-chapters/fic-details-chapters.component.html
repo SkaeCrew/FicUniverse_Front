@@ -1,0 +1,20 @@
+<div class="table-wrapper">
+  <h1>Chapters</h1>
+  <div class="table-wrapper-chapters">
+    <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
+      <ng-container matColumnDef="order">
+        <td *matCellDef="let element" mat-cell>{{ element.chapterOrder}}</td>
+      </ng-container>
+      <ng-container matColumnDef="chapter">
+        <td *matCellDef="let element" mat-cell>{{ element.title }}</td>
+      </ng-container>
+
+
+      <!--tr class="table-header" *matHeaderRowDef="displayedColumns" mat-header-row></tr-->
+      <tr *matRowDef="let row; columns: displayedColumns" [routerLink]="['/reading', fanfic.id,row.id]" [ngClass]="{'chapters-row': chapterData.id === row.id}"
+          mat-row></tr>
+
+    </table>
+  </div>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+</div>

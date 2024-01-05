@@ -1,0 +1,59 @@
+<div>
+  <mat-toolbar class="search-toolbar">
+    <!--span class="spacer"></span-->
+    <div class="search-toolbar-tools">
+      <mat-form-field class="search-bar">
+        <mat-label >Search by title or author...</mat-label>
+        <input class="search-input" matInput type="text" [(ngModel)]="value"  (keyup)="searchingFanfic()" >
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''; searchingFanfic()">
+          <mat-icon>close</mat-icon>
+        </button>
+        <button *ngIf="value == ''" matSuffix mat-icon-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-button class="mat-button" (click)="openCategoriesSheet()">
+        <mat-icon>category</mat-icon>
+        Categories
+      </button>
+      <button mat-button class="mat-button" (click)="openTagsSheet()">
+        <mat-icon>dns</mat-icon>
+        Tags
+      </button>
+      <button mat-button class="mat-button" [matMenuTriggerFor]="sortingMenu">
+        <mat-icon>sort</mat-icon>
+        Sort
+      </button>
+    </div>
+
+  </mat-toolbar>
+  <mat-menu #sortingMenu="matMenu">
+    <button mat-menu-item (click)="sortingBy(1)">Recent Upload</button>
+    <button mat-menu-item (click)="sortingBy(2)">Old Upload</button>
+    <button mat-menu-item (click)="sortingBy(3)">Most Views</button>
+    <button mat-menu-item (click)="sortingBy(4)">Most Favorites</button>
+    <button mat-menu-item (click)="sortingBy(5)">Alphabetical (A-Z)</button>
+    <button mat-menu-item (click)="sortingBy(6)">Alphabetical (Z-A)</button>
+  </mat-menu>
+
+</div>
+
+<div  *ngIf="!searching && !filtering ; else searchingTemplate">
+  <div class="search-title">
+    <h1>New releases</h1>
+  </div>
+  <div class="fic-cards">
+    <app-fic-search-card *ngFor="let fanfic of fanfics" [fanfic] = fanfic [routerLink]="['/details', fanfic.id]"></app-fic-search-card>
+  </div>
+</div>
+<ng-template #searchingTemplate>
+  <div class="search-title">
+    <h1>Search results</h1>
+  </div>
+  <div class="fic-cards" >
+    <app-fic-search-card *ngFor="let fanfic of fanficsSearched" [fanfic] = fanfic [routerLink]="['/details', fanfic.id]" ></app-fic-search-card>
+  </div>
+</ng-template>
+
+<app-footer-content></app-footer-content>
+

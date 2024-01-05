@@ -1,0 +1,56 @@
+<div class="navbar" >
+  <mat-toolbar class="toolbar">
+    <a routerLink="/">
+      <img src="assets/ficuniverse-logo.png" style="height: 60px; margin-top: 20px; padding-left: 50px " alt="FicUniverse Logo">
+    </a>
+    <div>
+      <a *ngIf="!userLogged()" routerLink="/login"  style="margin-right: 20px">
+        <button mat-raised-button color="primary" style="width: 100px">Login</button>
+      </a>
+      <a *ngIf="!userLogged()" routerLink="/register"  style="margin-right: 50px">
+        <button mat-raised-button color="primary" style="width: 100px">Register</button>
+      </a>
+    </div>
+    <div *ngIf="userLogged()">
+      <div style="display: flex; align-items: center">
+        <a routerLink="search">
+          <button mat-button color="primary">Search
+          <mat-icon>search</mat-icon>
+          </button>
+
+        </a>
+        <!--a routerLink="creations" >
+          <button mat-button color="primary">Creations</button>
+        </a-->
+        <button mat-button [matMenuTriggerFor]="writingMenu" color="primary">
+          Write your fanfic
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <!--a routerLink="authors">
+          <button mat-button color="primary">Authors</button>
+        </a-->
+        <button mat-button [matMenuTriggerFor]="crudMenu" color="primary">Cruds
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <button mat-button [matMenuTriggerFor]="profileMenu" color="primary">
+          <img class="avatar" [src]="imageUrl">
+        </button>
+
+        <mat-menu #writingMenu="matMenu">
+          <button mat-menu-item routerLink="write-fanfic">New fanfic</button>
+          <button mat-menu-item routerLink="my-fanfics">My Fanfics</button>
+        </mat-menu>
+        <mat-menu #crudMenu="matMenu">
+          <button mat-menu-item routerLink="chapters-crud">Chapters</button>
+          <button mat-menu-item routerLink="fanfic-crud">Fanfics</button>
+          <button mat-menu-item routerLink="comments-crud">Comments</button>
+        </mat-menu>
+        <mat-menu #profileMenu="matMenu">
+          <button mat-menu-item routerLink="myprofile">My profile</button>
+          <button mat-menu-item (click)="logOut()">Log out</button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+

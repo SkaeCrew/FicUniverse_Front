@@ -1,0 +1,17 @@
+  <h1 class="tag-sheet-title">Tags</h1>
+  <div class="tag-container">
+    <mat-chip-listbox aria-label="Tags" >
+      <div class="chip-item" *ngFor="let tag of tagsList">
+        <mat-chip  *ngIf="!tagsList[tag.id - 1].selected" (click)="tagsList[tag.id - 1].selected = true;" >
+          {{tag.name}}
+        </mat-chip>
+        <mat-chip-option *ngIf="tagsList[tag.id - 1].selected" selected (click)="tagsList[tag.id - 1].selected = false;">
+          {{tag.name}}
+        </mat-chip-option>
+      </div>
+    </mat-chip-listbox>
+  </div>
+  <div class="action-buttons">
+    <button mat-button color="warn" (click) = "onCancel()"> Cancel</button>
+    <button mat-button color="primary" (click)="sendTagsSelected()"> Apply</button>
+  </div>

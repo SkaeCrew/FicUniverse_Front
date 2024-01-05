@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.home-component .owl-next, .home-component .owl-prev{
+  display: inline-flex!important;
+  background-color: rgba(210, 210, 210, 0.78) !important;
+  position: absolute!important;
+  height: 30px!important;
+  top: 40%!important;
+}
+.home-component .owl-prev{
+  left: 1%!important;
+}
+
+.home-component .owl-next{
+  left: 96%!important;
+}
+.home-component .owl-carousel .owl-stage {
+  margin-bottom: 10px;
+}

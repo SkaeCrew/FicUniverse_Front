@@ -1,0 +1,12 @@
+<div class="profile-card-container">
+  <mat-card class="profile-card">
+    <mat-card-header>
+      <img mat-card-lg-image [src]="profile.imageUrl" class="img">
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card-title>{{profile.firstName}} {{profile.lastName}}</mat-card-title>
+      <p>{{profile.username}}</p>
+      <p>{{profile.email}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

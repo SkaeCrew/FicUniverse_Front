@@ -1,0 +1,82 @@
+<div class="register-page">
+  <div class="register-form-container">
+    <form class="register-form">
+      <h2 style="text-align: center">Join FicUniverse</h2>
+      <h3>User Name</h3>
+      <mat-form-field>
+        <mat-label>User Name</mat-label>
+        <input matInput
+               type="text"
+               [formControl]="nameFormControl"
+               placeholder="Insano777"
+               [errorStateMatcher]="matcher"
+        >
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+          Username is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <h3>Email</h3>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput
+               type="email"
+               [formControl]="emailFormControl"
+               placeholder="example@mail.com"
+               [errorStateMatcher]="matcher"
+        >
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <h3>Password</h3>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput
+               [type]="hidePassword ? 'password' : 'text'"
+               [formControl]="passwordFormControl"
+               [errorStateMatcher]="matcher"
+               (keyup)="passwordMatches()">
+        <mat-error *ngIf="passwordFormControl.hasError('required')">
+          Password is <strong>required</strong>
+        </mat-error>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="togglePasswordVisibility($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hidePassword"
+        >
+          <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <h3>Confirm password</h3>
+      <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input matInput
+               [type]="hideConfirmPassword ? 'password' : 'text'"
+               [formControl]="passwordFormControlConfirm"
+               [errorStateMatcher]="matcher"
+                (keyup)="passwordMatches()">
+        <mat-error *ngIf="passwordFormControlConfirm.hasError('required')">
+          This is <strong>required</strong>
+        </mat-error>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="toggleConfirmPasswordVisibility($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hideConfirmPassword"
+        >
+          <mat-icon>{{hideConfirmPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-button color="primary" (click)="doRegister()">Register</button>
+    </form>
+  </div>
+</div>

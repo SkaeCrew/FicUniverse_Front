@@ -1,0 +1,87 @@
+.details-fan {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+  
+  .left-column {
+    width: 40%; 
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .right-column {
+    width: 60%; 
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+
+    img {
+      width: 20%;
+      height: auto;
+      float:left;
+      margin-right: 20px;
+    }
+  }
+  
+  .examp-ca {
+    //max-width: 300px; 
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+  }
+
+  .mat-card-content {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+  }
+
+  .info-row {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-row p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .statistic {
+    padding: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #000
+  }
+
+  .correcion{
+    margin-top: 5%;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .chapter-list-title {
+    text-align: left;
+  }
+  
+  .chapter-item {
+    text-align: left;
+  }
+  
+  .examp-ca + .examp-ca {
+    margin-top: 16px; 
+  }

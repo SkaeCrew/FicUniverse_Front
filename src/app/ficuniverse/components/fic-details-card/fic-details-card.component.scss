@@ -1,0 +1,33 @@
+.fic-card {
+  display: flex;
+  flex-direction: row; /* Alinear horizontalmente */
+  padding: 20px;
+  margin: 20px;
+  height: auto;
+  justify-content: center;
+  max-height: 250px;
+
+
+}
+
+.fic-card-image {
+  margin-right: 16px; /* Espacio entre la imagen y el texto */
+  max-height: 200px;
+}
+
+.fic-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fic-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats-view{
+  margin: 10px;
+}
+
